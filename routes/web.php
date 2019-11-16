@@ -12,5 +12,31 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/extras', function () {
+    return view('extras.index');
+});
+Route::get('/extras/trackSelector', function () {
+    return view('extras.trackSelector');
+});
+
+Route::resource('/challengeDT', 'challengeDT');
+
+
+Route::get('/Quick','challengeData@getQuick');
+Route::get('/Dialy','challengeData@getDialy');
+Route::get('/Weekly','challengeData@getWeekly');
+Route::get('/Themed','challengeData@getThemed');
+Route::get('/Pro','challengeData@getPro');
+Route::get('/Tier','challengeData@getTier');
+
+Route::get('/Time','challengeData@getTime');
+Route::get('/Views','challengeData@getVisitPage');
+Route::get('/Feedbacks','challengeData@getFeedbacks');
+
+
+Route::get('/RaceTracks','challengeData@getTrackRace');
+Route::get('/BattleTracks','challengeData@getTrackBattle');
+
