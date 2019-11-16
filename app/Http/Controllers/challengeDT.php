@@ -14,6 +14,38 @@ class challengeDT extends Controller
     public function index()
     {
         //
+         //
+        $challengeDTArray = array();
+        
+        $challengeDT = array();
+        array_push($challengeDT, "Kamikase");
+        array_push($challengeDT, "Explota blablabla");
+        array_push($challengeDT, "0");
+        array_push($challengeDT, "2");
+        array_push($challengeDTArray, $challengeDT);
+
+        $challengeDT = array();
+        array_push($challengeDT, "adfafa");
+        array_push($challengeDT, "dfadasfdasf blablabla");
+        array_push($challengeDT, "0");
+        array_push($challengeDT, "5");
+        array_push($challengeDTArray, $challengeDT);
+
+        $challengeDT = array();
+        array_push($challengeDT, "adfadfadfasf");
+        array_push($challengeDT, "nmhmhm blablabla");
+        array_push($challengeDT, "0");
+        array_push($challengeDT, "1");
+        array_push($challengeDTArray, $challengeDT);
+
+        $challengeDT = array();
+        array_push($challengeDT, "rtrtr");
+        array_push($challengeDT, "afggng blablabla");
+        array_push($challengeDT, "0");
+        array_push($challengeDT, "10");
+        array_push($challengeDTArray, $challengeDT);
+
+        return response()->json($challengeDTArray);
     }
 
     /**
@@ -35,6 +67,15 @@ class challengeDT extends Controller
     public function store(Request $request)
     {
         //
+         //
+        
+        DB::table('tbl_feedback')
+            ->insert([
+                'description'        =>    $request->description,
+                'created_at'       =>      gmdate("Y-m-j H:i:s", time())
+            ]);
+        
+        return redirect('/');
     }
 
     /**
