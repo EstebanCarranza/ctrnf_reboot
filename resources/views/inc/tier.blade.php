@@ -1,5 +1,5 @@
 <h1>Tier</h1>
-<img width='100%' src="img/01_grandprix.jpg"/>
+<img width='100%' src="img/grandprix/05.png"/>
 <table class="striped center">
         <thead>
           <tr>
