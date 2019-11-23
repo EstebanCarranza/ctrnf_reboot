@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('body')
-<h4 class="center">Neon Circus<br><h6 class="center">(2019-08-02 to 2019-08-25) [AAAA-MM-DD]</h6></h4>
+<h4 class="center">Neon Circus<br><h6 class="center">(2019-11-08 to 2019-12-08) [AAAA-MM-DD]</h6></h4>
 <h5 class='center gmtDate'></h5>
 <br>
 <div class="row">
