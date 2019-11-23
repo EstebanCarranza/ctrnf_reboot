@@ -77,12 +77,12 @@ class challengeData extends Controller
     }
     public function getTrackRace()
     {
-        $quickTable = DB::table('tbl_track')->select()->where('mode',1)->get();
+        $quickTable = DB::table('tbl_track')->select()->where('mode',1)->where('language','ES-MX')->get();
         return response()->json($quickTable);
     }
     public function getTrackBattle()
     {
-        $quickTable = DB::table('tbl_track')->select()->where('mode',2)->get();
+        $quickTable = DB::table('tbl_track')->select()->where('mode',2)->where('language','ES-MX')->get();
         return response()->json($quickTable);
     }
 }

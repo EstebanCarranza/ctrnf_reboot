@@ -83,7 +83,7 @@ function getRaceTracks()
                 if (RaceTracks.length > 0)
                 {
                     index = randomIntFromInterval(1, 32) - 1;
-                    $(".dataRandomTrack").html("<h1>Number Track: " + RaceTracks[index].numberTrack + "<br>Name track: " + RaceTracks[index].title + "</h1>");
+                    $(".dataRandomTrack").html("<h1>Number Track: " + RaceTracks[index].numberTrack + "<br>Name track: " + RaceTracks[index].title + "</h1><img class='materialboxed' width='100%' src='"+ RaceTracks[index].pathImg+"'>");
                 }
                     
             },
