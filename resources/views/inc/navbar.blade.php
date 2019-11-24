@@ -65,6 +65,7 @@
                     });
                 }   
              }*/
+             
              setTheme();
 
             $(".chkTheme").change(function(){
